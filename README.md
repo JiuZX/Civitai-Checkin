@@ -4,9 +4,9 @@ Node 单次运行脚本，固定执行三项 Civitai Blue Buzz 任务。
 
 ## 任务
 
-| Task | Reward |
-| --- | ---: | ---: |
-| For claiming daily boost rewards | 25 Blue Buzz |
+| Task | Reward (Blue Buzz) |
+| --- | ---: | 
+| For claiming daily boost rewards | 25  |
 | For encouraging others to post content | 2 × 50 = 100 |
 | For first 3 people that you follow each day | 10 × 3 = 30 |
 | Total | **155 Blue Buzz** | |
@@ -19,7 +19,7 @@ Node 单次运行脚本，固定执行三项 Civitai Blue Buzz 任务。
 2. 在 `Settings → Secrets and variables → Actions → Secrets` 添加 `CIVITAI_API_KEY`。
 3. 在 `Actions → Civitai Blue Buzz → Run workflow` 直接运行。
 
-每天计划在 **02:00 UTC / 北京时间 10:00** 执行，GitHub 可能延迟。工作流只有拉取代码、准备 Node、`npm ci`、`npm run checkin` 四步。
+每天计划在 **02:00 UTC** 执行。
 
 ## 本地运行
 
@@ -34,7 +34,7 @@ npm run checkin
 
 结束时在终端 / Actions 日志输出三项完成情况、本轮操作数、撤回数、已核实奖励和撤回后重读的 Blue Buzz 余额。不生成状态文件、JSON 报告或 Summary，重跑以站点当天进度为准。
 
-以下是模拟示例，不是实际账号验收结果：
+以下是模拟示例。
 
 ```text
 [Daily Boost] COMPLETED | successful operations 1/1 | verified gain 25 | today 25/25 | unverified 0
