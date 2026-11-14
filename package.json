@@ -1,0 +1,21 @@
+{
+  "name": "civitai-checkin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "API-key authenticated Civitai Blue Buzz tasks for Node and GitHub Actions",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "checkin": "node src/cli.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "devalue": "^5.3.2",
+    "superjson": "^2.2.2"
+  },
+  "devDependencies": {
+    "yaml": "^2.8.1"
+  }
+}
